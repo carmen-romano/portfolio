@@ -1,0 +1,12 @@
+#navbar .custom-toggler {
+  border: none;
+  font-size: 1.2rem;
+  background: none;
+}
+
+#navbar .custom-toggler:hover,
+#navbbar .custom-toggler:focus {
+  text-decoration: underline;
+  background: none;
+  box-shadow: none;
+}
