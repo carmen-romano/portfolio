@@ -1,5 +1,7 @@
+import { Container } from "react-bootstrap";
+
 let Home = () => {
-  return <div>Home</div>;
+  return <Container id="home">Home</Container>;
 };
 
 export default Home;
