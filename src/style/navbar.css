@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-* {
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-}
 #navbar {
   position: fixed;
   width: 100%;
@@ -27,7 +23,6 @@
   z-index: 999;
 }
 #navbar .navbar-nav a {
-  font-size: 1.3em;
   text-align: center;
   margin-top: 10vh;
   color: rgb(232, 232, 232);
@@ -36,4 +31,67 @@
   font-style: normal;
   font-variation-settings: "wdth" 75;
   font-size: 5.5em;
+}
+
+#navbar .title:hover {
+  cursor: pointer;
+}
+#navbar .custom-toggler {
+  border: none;
+  background: none;
+}
+
+#navbar .custom-toggler:hover,
+#navbbar .custom-toggler:focus {
+  text-decoration: underline;
+  background: none;
+  box-shadow: none;
+}
+#navbar .title {
+  font-weight: 300;
+}
+#navbar .symbol {
+  font-weight: 700;
+}
+/* Circle Static */
+#circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#circle .circle-svg {
+  width: 4vw;
+  font-weight: 800;
+  letter-spacing: 0.3em;
+}
+
+#circle .circle-svg {
+  width: 4vw;
+}
+
+#circle .center-text {
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+#circle .rotating-text {
+  animation: rotateOut 10s linear infinite;
+}
+#circle .rotating-text:hover {
+  animation: none;
+}
+
+@keyframes rotateOut {
+  0% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+  }
+  100% {
+    -webkit-transform-origin: center;
+    transform-origin: center;
+    -webkit-transform: rotate3d(0, 0, 1, 200deg);
+    transform: rotate3d(0, 0, 1, 200deg);
+  }
 }
