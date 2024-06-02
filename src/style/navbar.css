@@ -1,54 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-#navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
-  background-color: transparent !important;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+#navbar .container-nav {
+  display: flex;
+  justify-content: space-between !important;
 }
-#navbar .navbar-collapse {
-  background-color: red;
-  height: 100vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 998;
+#navbar .me-auto {
+  margin-left: auto;
+  margin-right: auto !important;
 }
-#navbar .container-fluid button {
-  background-color: rgba(221, 221, 221, 0.289);
-  z-index: 999;
-}
-#navbar .navbar-nav a {
-  text-align: center;
-  margin-top: 10vh;
-  color: rgb(232, 232, 232);
-  text-decoration: none;
-  font-weight: 900;
-  font-style: normal;
-  font-variation-settings: "wdth" 75;
-  font-size: 5.5em;
-}
-
 #navbar .title:hover {
   cursor: pointer;
 }
-#navbar .custom-toggler {
-  border: none;
-  background: none;
-}
 
-#navbar .custom-toggler:hover,
-#navbbar .custom-toggler:focus {
-  text-decoration: underline;
-  background: none;
-  box-shadow: none;
-}
 #navbar .title {
   font-weight: 300;
+  letter-spacing: -0.07em;
 }
 #navbar .symbol {
   font-weight: 700;
@@ -61,18 +27,16 @@
 }
 
 #circle .circle-svg {
-  width: 4vw;
+  width: 4.3vw;
   font-weight: 800;
-  letter-spacing: 0.3em;
-}
-
-#circle .circle-svg {
-  width: 4vw;
+  letter-spacing: 0.4em;
+  font-size: large;
 }
 
 #circle .center-text {
   font-family: monospace;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
   text-anchor: middle;
   dominant-baseline: middle;
 }
