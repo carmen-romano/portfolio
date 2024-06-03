@@ -1,1 +1,26 @@
+#home .home-name {
+  font-size: 2rem;
+}
+#home .title {
+  font-size: 5rem;
+  font-weight: 400;
+  line-break: auto;
+}
+#home .icons {
+  font-size: 2rem;
+  font-weight: 400;
+}
 
+#home .wave {
+  display: inline-block;
+  animation: wave-animation 0.4s linear infinite alternate;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(10deg);
+  }
+}
