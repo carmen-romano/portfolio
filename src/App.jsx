@@ -39,9 +39,9 @@ function App() {
           <MyNavbar />
           <Container>
             <Home />
+            <Skills />
             <Project />
             <Contact />
-            <Skills />
           </Container>
         </>
       )}
