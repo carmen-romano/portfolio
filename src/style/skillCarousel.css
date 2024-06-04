@@ -11,13 +11,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 10%;
   height: 100%;
   transition: transform 0.5s ease;
 }
 
 .carousel-card-skill:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .carousel-track-skill {

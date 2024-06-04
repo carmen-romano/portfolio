@@ -12,7 +12,7 @@ let Project = () => {
       name: "Spotify Clone",
       project: spotify,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et",
+        "'Spotify Clone' realizzato interamente in JS Vanilla, offre funzionalità di ricerca, riproduzione e gestione di brani musicali e esplorazione di album e artisti, con un'interfaccia intuitiva e reattiva.",
       linearGradient:
         "linear-gradient(to bottom, #25bf5bd0 30%, #3da662c5 100%)",
       linearGradient2:
@@ -22,7 +22,7 @@ let Project = () => {
       name: "LinkedIn Clone",
       project: linkedin,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et",
+        "'LinkedIn Clone' consente agli utenti di creare profili, connettersi, condividere post e interagire con il contenuto. Utilizza React per l'interfaccia utente, Redux per lo stato e un'API personalizzata per la gestione dei dati.",
       linearGradient:
         "linear-gradient(to bottom, #1068c1bf 30%, #3772ad  100%)",
       linearGradient2:
@@ -32,7 +32,7 @@ let Project = () => {
       name: "App Meteo",
       project: appMeteo,
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Et",
+        "Questo progetto utilizza l'API di OpenWeather per visualizzare le previsioni meteorologiche. Implementato con React, offre agli utenti informazioni meteorologiche attuali e future in modo intuitivo.",
       linearGradient: "linear-gradient(to bottom, #bdeefe 30%, #2ab9e9c7 100%)",
       linearGradient2:
         "linear-gradient(to bottom, #a9e9ff6e 0%, #41abcf95 40%)",
@@ -41,7 +41,7 @@ let Project = () => {
 
   return (
     <Container id="project" className="my-5">
-      <h2 className="text-center">Progetti</h2>
+      <h2 className="text-center">Alcuni dei miei progetti</h2>
       <Row>
         {project.map((project, id) => (
           <Col key={id}>

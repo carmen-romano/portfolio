@@ -13,7 +13,7 @@ import postgreSql from "../../public/images/skills/PostgreSQL-Logo.wine.svg";
 import { Image } from "react-bootstrap";
 import "../style/skillCarousel.css";
 
-const Skills = () => {
+const Skills = ({ show }) => {
   const skills = [
     { name: "CSS", logo: cssLogo },
     { name: "Git", logo: gitLogo },
@@ -43,15 +43,23 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="text-center my-5 border-top pt-3">Skills</h2>
-      <div id="skills" className="carousel-container-skill">
-        <div className="carousel-track-skill">
-          {skills.map((skill, id) => (
-            <div key={id} className="carousel-card-skill">
-              <Image src={skill.logo} alt={skill.name} width={80} height={80} />
-              <p className="mt-2 fs-6">{skill.name}</p>
-            </div>
-          ))}
+      <div className={`${show ? "fade-in" : ""}`}>
+        <h2 className="text-center my-5 border-top pt-3">Skills</h2>
+        <div id="skills" className="carousel-container-skill">
+          <div className="carousel-track-skill">
+            {skills.map((skill, id) => (
+              <div key={id} className="carousel-card-skill">
+                <Image
+                  src={skill.logo}
+                  alt={skill.name}
+                  width={80}
+                  height={80}
+                  className="mt-2"
+                />
+                <p className="mt-2 fs-6">{skill.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>
