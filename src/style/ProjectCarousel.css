@@ -1,0 +1,12 @@
+#project .slick-slide {
+  background-color: rgb(186, 186, 186);
+  text-align: center;
+}
+#project .slick-arrow {
+  color: rgb(186, 186, 186);
+}
+#project .carouselProject {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  width: 90% !important;
+}

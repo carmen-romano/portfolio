@@ -16,11 +16,10 @@ let Home = () => {
   }, []);
   return (
     <Container id="home">
-      <div className="my-5">
-        <Row>
-          <Col>
+      <div className="my-5 ">
+        <Row className="align-items-center">
+          <Col md={9}>
             <div>
-              {" "}
               <h1 className="home-name">
                 Ciao
                 <span className={`hand mx-2 ${isWaving ? "wave" : ""}`}>
@@ -30,6 +29,8 @@ let Home = () => {
               </h1>
               <h2 className="title">FULL STACK DEVELOPER</h2>
             </div>
+          </Col>
+          <Col md={3}>
             <div className="icons d-flex">
               <Nav.Link
                 href="https://www.linkedin.com/in/carmen-romano-44aa6998/"
@@ -54,11 +55,6 @@ let Home = () => {
                 <FaInstagram />
               </Nav.Link>
             </div>
-          </Col>
-          <Col>
-            <h1 className="home-name">
-              Ciao <span className="hand">👋🏻 </span>sono Carmen!
-            </h1>
           </Col>
         </Row>
       </div>

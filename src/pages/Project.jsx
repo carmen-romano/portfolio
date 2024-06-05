@@ -44,7 +44,7 @@ let Project = () => {
       <h2 className="text-center">Alcuni dei miei progetti</h2>
       <Row>
         {project.map((project, id) => (
-          <Col key={id}>
+          <Col key={id} className="d-flex-align-content-center">
             <div className="wrapper">
               <div
                 className="container"

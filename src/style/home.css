@@ -2,9 +2,10 @@
   font-size: 2rem;
 }
 #home .title {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 400;
   line-break: auto;
+  color: #6e6e73;
 }
 #home .icons {
   font-size: 2rem;
