@@ -1,12 +1,78 @@
-#project .slick-slide {
-  background-color: rgb(186, 186, 186);
+#project {
+  margin-top: 30vh;
+  margin-bottom: 30vh;
+}
+
+#project .carousel-containe {
+  background-color: #14080ee8;
+  border-radius: 20px;
+  box-shadow: 8px 13px 8px -6px rgba(97, 97, 97, 0.29);
+  padding-left: 4vh;
+  padding-right: 4vh;
+  padding-top: 1vh;
+  max-width: 60vh;
+  height: 50vh;
+  transition: transform 0.5s ease;
+}
+#project .carousel-containe:hover {
+  transform: scale(1.1);
+}
+
+#project .slick-arrow {
+  fill: #14080ee8 !important;
+}
+#project p:first-of-type {
+  font-size: 0.8em;
+  font-weight: 400;
   text-align: center;
 }
-#project .slick-arrow {
-  color: rgb(186, 186, 186);
+#project svg {
+  fill: #c7d1f9cc;
+  margin-bottom: 10px;
+}
+#project p {
+  font-size: 0.8em;
+  color: #c7d1f9cc !important;
+}
+#project h3 {
+  margin-top: 3px;
+  color: #c7d1f9cc !important;
+  font-size: 1.4em;
+  text-align: center !important;
+  font-weight: 500;
 }
 #project .carouselProject {
-  border: 1px solid rgba(0, 0, 0, 0);
-  border-radius: 10px;
-  width: 90% !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+#project .carouselProject img {
+  width: 100% !important;
+  aspect-ratio: 4/2 !important;
+  object-fit: cover !important;
+}
+
+#project .custom-slider {
+  text-align: start;
+}
+/* Dark mode project styles */
+#project.dark-mode h1,
+#project.dark-mode h2,
+#project.dark-mode p,
+#project.dark-mode span {
+  color: #b7c3f3 !important;
+}
+
+#project.dark-mode svg {
+  fill: #292929 !important;
+}
+
+#project.dark-mode p {
+  color: rgb(43, 43, 43) !important;
+}
+#project.dark-mode .slick-arrow {
+  fill: #bec4d9 !important;
+}
+#project.dark-mode .carousel-containe {
+  background-color: #b7c3f3;
+  box-shadow: 8px 13px 8px -6px #b7c3f34d;
 }

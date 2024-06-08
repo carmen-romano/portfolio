@@ -5,6 +5,7 @@ import spotify from "../../public/images/project/spotifyClone.webp";
 import linkedin from "../../public/images/project/linkedinclone.webp";
 
 import "../style/skillCarousel.css";
+import Skills from "../components/Skills";
 
 let Project = () => {
   const project = [
@@ -41,10 +42,13 @@ let Project = () => {
 
   return (
     <Container id="project" className="my-5">
-      <h2 className="text-center">Alcuni dei miei progetti</h2>
+      <h2 className="text-center element-to-watch">Alcuni dei miei progetti</h2>
       <Row>
         {project.map((project, id) => (
-          <Col key={id} className="d-flex-align-content-center">
+          <Col
+            key={id}
+            className="d-flex-align-content-center element-to-watch"
+          >
             <div className="wrapper">
               <div
                 className="container"

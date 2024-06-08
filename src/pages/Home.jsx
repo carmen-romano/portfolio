@@ -4,8 +4,11 @@ import { LiaLinkedinIn } from "react-icons/lia";
 import { FiGithub } from "react-icons/fi";
 import { FaInstagram } from "react-icons/fa6";
 import { useEffect, useState } from "react";
-let Home = () => {
+
+const Home = () => {
   const [isWaving, setIsWaving] = useState(false);
+  const [displayedText, setDisplayedText] = useState("");
+  const fullText = "JUNIOR FULL STACK DEVELOPER";
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -14,11 +17,25 @@ let Home = () => {
 
     return () => clearInterval(interval);
   }, []);
+
+  useEffect(() => {
+    let currentIndex = 0;
+    const typingInterval = setInterval(() => {
+      setDisplayedText(fullText.substring(0, currentIndex + 1));
+      currentIndex++;
+      if (currentIndex === fullText.length) {
+        clearInterval(typingInterval);
+      }
+    }, 150);
+
+    return () => clearInterval(typingInterval);
+  }, [fullText]);
+
   return (
     <Container id="home">
-      <div className="my-5 ">
+      <div className="my-5">
         <Row className="align-items-center">
-          <Col md={9}>
+          <Col md={8}>
             <div>
               <h1 className="home-name">
                 Ciao
@@ -27,11 +44,9 @@ let Home = () => {
                 </span>
                 sono Carmen!
               </h1>
-              <h2 className="title">FULL STACK DEVELOPER</h2>
+              <h2 className="title">{displayedText}</h2>
             </div>
-          </Col>
-          <Col md={3}>
-            <div className="icons d-flex">
+            <div className="icons d-flex my-5">
               <Nav.Link
                 href="https://www.linkedin.com/in/carmen-romano-44aa6998/"
                 target="_blank"

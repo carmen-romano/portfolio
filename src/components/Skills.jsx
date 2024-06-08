@@ -43,21 +43,25 @@ const Skills = () => {
 
   return (
     <>
-      <h2 className="text-center my-5 border-top pt-3">Skills</h2>
-      <div id="skills" className="carousel-container-skill">
-        <div className="carousel-track-skill">
-          {skills.map((skill, id) => (
-            <div key={id} className="carousel-card-skill">
-              <Image
-                src={skill.logo}
-                alt={skill.name}
-                width={80}
-                height={80}
-                className="mt-2"
-              />
-              <p className="mt-2 fs-6">{skill.name}</p>
-            </div>
-          ))}
+      <div id="skillPage">
+        <h2 className="text-center my-5 border-top pt-3 element-to-watch">
+          Skills
+        </h2>
+        <div id="skills" className="carousel-container-skill element-to-watch">
+          <div className="carousel-track-skill">
+            {skills.map((skill, id) => (
+              <div key={id} className="carousel-card-skill">
+                <Image
+                  src={skill.logo}
+                  alt={skill.name}
+                  width={80}
+                  height={80}
+                  className="mt-2"
+                />
+                <p className="mt-2 fs-6">{skill.name}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </>

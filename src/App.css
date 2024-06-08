@@ -1,21 +1,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/* Global styles */
 * {
   font-family: "Roboto", sans-serif;
 }
 body {
   cursor: none;
-  background-color: #f5f5f7;
 }
-
 .cursor {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: rgba(93, 93, 93, 0.508);
+  background-color: #534b62;
   position: fixed;
   pointer-events: none !important;
   z-index: 10000 !important;
 }
+.element-to-watch {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+.element-to-watch.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
 .back-to-top {
   right: 0;
+}
+body a:hover,
+body svg:hover {
+  color: #473198 !important;
+}
+/* Dark mode global styles */
+
+body.dark-mode {
+  background-color: #14080e;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode a,
+body.dark-mode svg {
+  color: #b7c3f3 !important;
+}
+body.dark-mode .cursor {
+  background-color: #473198;
+}
+/* Light mode global styles */
+body.light-mode {
+  background-color: #c7d1f9cc;
+}
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode p,
+body.light-modee span,
+body.light-mode a,
+body.light-mode svg {
+  color: #14080e !important;
 }

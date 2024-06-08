@@ -1,12 +1,20 @@
+#home {
+  margin-bottom: 34vh;
+}
 #home .home-name {
   font-size: 2rem;
+  margin-top: 15vh;
 }
 #home .title {
   font-size: 4rem;
   font-weight: 400;
   line-break: auto;
   color: #6e6e73;
+  margin-top: 10vh;
+  overflow: hidden;
+  letter-spacing: 0.15em;
 }
+
 #home .icons {
   font-size: 2rem;
   font-weight: 400;
