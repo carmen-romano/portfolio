@@ -10,8 +10,10 @@ import typescriptLogo from "../../public/images/skills/typescript-original.svg";
 import vuejsLogo from "../../public/images/skills/Vue.js-Logo.wine.svg";
 import bootstrapLogo from "../../public/images/skills/Bootstrap_(front-end_framework)-Logo.wine.svg";
 import postgreSql from "../../public/images/skills/PostgreSQL-Logo.wine.svg";
+import Spring from "../../public/images/skills/spring.svg";
 import { Image } from "react-bootstrap";
 import "../style/skillCarousel.css";
+import { useSelector } from "react-redux";
 
 const Skills = () => {
   const skills = [
@@ -27,6 +29,7 @@ const Skills = () => {
     { name: "Vue.js", logo: vuejsLogo },
     { name: "Bootstrap", logo: bootstrapLogo },
     { name: "PostgreSQL", logo: postgreSql },
+    { name: "Spring", logo: Spring },
     { name: "CSS", logo: cssLogo },
     { name: "Git", logo: gitLogo },
     { name: "HTML", logo: htmlLogo },
@@ -39,11 +42,13 @@ const Skills = () => {
     { name: "Vue.js", logo: vuejsLogo },
     { name: "Bootstrap", logo: bootstrapLogo },
     { name: "PostgreSQL", logo: postgreSql },
+    { name: "Spring", logo: Spring },
   ];
+  const darkMode = useSelector(state => state.darkMode.darkMode);
 
   return (
     <>
-      <div id="skillPage">
+      <div id="skillPage" className={darkMode ? "dark-mode" : "light-mode"}>
         <h2 className="text-center my-5 border-top pt-3 element-to-watch">
           Skills
         </h2>

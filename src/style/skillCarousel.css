@@ -11,6 +11,12 @@
   position: relative;
   overflow: hidden;
 }
+#skillPage.light-mode h2 {
+  border-top: 1px solid #14080e6d !important;
+}
+#skillPage.dark-mode h2 {
+  border-top: 1px solid #c7d1f9cc !important;
+}
 
 .carousel-card-skill {
   display: flex;
