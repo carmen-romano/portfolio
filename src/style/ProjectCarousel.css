@@ -69,6 +69,9 @@
 #project.dark-mode p {
   color: rgb(43, 43, 43) !important;
 }
+#project.dark-mode H3 {
+  color: rgb(43, 43, 43) !important;
+}
 #project.dark-mode .slick-arrow {
   fill: #bec4d9 !important;
 }
