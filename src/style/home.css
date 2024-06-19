@@ -33,3 +33,28 @@
     transform: rotate(10deg);
   }
 }
+@media screen and (max-width: 993px) {
+  #home .title {
+    font-size: 3.5rem;
+  }
+}
+@media screen and (max-width: 438px) {
+  #home .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 358px) {
+  #home .title {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 313px) {
+  #home .title {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 258px) {
+  #home .title {
+    font-size: 1.5rem;
+  }
+}

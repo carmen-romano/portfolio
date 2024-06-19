@@ -59,3 +59,11 @@
     transform: rotate3d(0, 0, 1, 200deg);
   }
 }
+@media screen and (max-width: 993px) {
+  #navbar .navbar-toggler {
+    display: none !important;
+  }
+  #navbar .navbar-expand-lg {
+    flex-direction: row !important;
+  }
+}

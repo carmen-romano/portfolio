@@ -12,7 +12,10 @@ const Footer = () => {
       <Row>
         <Col>
           <div className="text-center my-4 fs-6" id="footer">
-            <span>Designed and Developed by Carmen Romano</span>
+            <span>
+              Designed and Developed by <br />
+              Carmen Romano
+            </span>
             <span className="mx-2">©{currentYear}</span>
             <div className="icons d-flex justify-content-center fs-5">
               <Nav.Link
