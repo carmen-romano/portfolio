@@ -36,11 +36,10 @@ let About = () => {
               </p>
               <h2 className="fs-5 fw-light">
                 <a
-                  href="/public/images/Curriculum Carmen Romano.pdf"
+                  href="public/images/Curriculum Carmen Romano.pdf"
                   download="Curriculum_Vitae_Carmen_Romano.pdf"
                   className="text-decoration-none text-dark"
                 >
-                  {/* DA FARE  */}
                   <FaArrowDownLong className="fs-5 mx-2" />
                   Curriculum Vitae
                 </a>
