@@ -30,6 +30,7 @@ let Project = () => {
 
   return (
     <Container id="project" className="my-5">
+      <hr />
       <h2 className="text-center element-to-watch">Alcuni dei miei progetti</h2>
       <Row>
         {project.map((project, id) => (

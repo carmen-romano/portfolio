@@ -1,6 +1,6 @@
 import "../style/about.css";
 import { Col, Container, Nav, Row } from "react-bootstrap";
-import { FaArrowDownLong } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 
 let About = () => {
   return (
@@ -40,7 +40,7 @@ let About = () => {
                   download="Curriculum_Vitae_Carmen_Romano.pdf"
                   className="text-decoration-none text-dark"
                 >
-                  <FaArrowDownLong className="fs-5 mx-2" />
+                  <FaArrowRight className="fs-5 mx-2" />
                   Download CV
                 </a>
               </h2>
@@ -48,6 +48,7 @@ let About = () => {
           </Col>
         </Row>
       </Container>
+      <hr className="mt-5" />
     </div>
   );
 };

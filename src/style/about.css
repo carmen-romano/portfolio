@@ -2,3 +2,9 @@
   word-spacing: 5px;
   font-weight: 300;
 }
+body.dark-mode #about hr {
+  color: #b7c3f3 !important;
+}
+body.light-mode #about hr {
+  color: #14080e !important;
+}

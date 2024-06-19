@@ -27,6 +27,12 @@ body {
 .back-to-top {
   right: 0;
 }
+.fill-black {
+  fill: #b7c3f3;
+}
+.fill-white {
+  fill: #14080e;
+}
 body a:hover,
 body svg:hover {
   color: #473198 !important;
@@ -41,7 +47,8 @@ body.dark-mode h2,
 body.dark-mode p,
 body.dark-mode span,
 body.dark-mode a,
-body.dark-mode svg {
+body.dark-mode svg,
+body.dark-mode hr {
   color: #b7c3f3 !important;
 }
 body.dark-mode .cursor {
@@ -56,7 +63,8 @@ body.light-mode h2,
 body.light-mode p,
 body.light-modee span,
 body.light-mode a,
-body.light-mode svg {
+body.light-mode svg,
+body.dark-mode hr {
   color: #14080e !important;
 }
 @media screen and (max-width: 438px) {

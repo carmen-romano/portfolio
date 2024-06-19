@@ -92,7 +92,7 @@ function App() {
               <IoIosArrowUp
                 className={
                   "back-to-top position-fixed fs-3 mx-3 rounded-4 " +
-                  (darkMode ? "text-black bg-white" : "text-white bg-dark")
+                  (darkMode ? "fill-black" : "fill-white ")
                 }
                 onClick={scrollToTop}
               />
