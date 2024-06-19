@@ -9,11 +9,11 @@ let About = () => {
         <Row>
           <hr />
           <div className="my-5">
-            <h2 className="text-center ">Qualcosa su di me</h2>
+            <h2 className="text-center fs-2">Chi sono</h2>
           </div>
           <Col>
             <div>
-              <p className="fs-4">
+              <p className="fs-4 text-center">
                 Dopo aver coltivato la mia passione per la programmazione
                 attraverso lo studio autonomo, ho deciso di intraprendere un
                 corso intensivo di formazione presso Epicode per ampliare e
@@ -34,14 +34,14 @@ let About = () => {
                   colleghiamoci!
                 </Nav.Link>
               </p>
-              <h2 className="fs-5 fw-light">
+              <h2 className="fs-5 fw-light text-center mt-4">
                 <a
                   href="/images/Curriculum%20Carmen%20Romano.pdf"
                   download="Curriculum_Vitae_Carmen_Romano.pdf"
                   className="text-decoration-none text-dark"
                 >
                   <FaArrowDownLong className="fs-5 mx-2" />
-                  Curriculum Vitae
+                  Download CV
                 </a>
               </h2>
             </div>

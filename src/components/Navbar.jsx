@@ -38,7 +38,7 @@ const MyNavbar = () => {
           </Nav>
           <Nav>
             <Nav.Link onClick={() => scrollToSection("about")}>
-              Su di me
+              Chi sono
             </Nav.Link>
             <Nav.Link onClick={() => scrollToSection("project")}>
               Progetti
