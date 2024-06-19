@@ -37,7 +37,9 @@ const MyNavbar = () => {
             </Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link onClick={() => scrollToSection("about")}>About</Nav.Link>
+            <Nav.Link onClick={() => scrollToSection("about")}>
+              Su di me
+            </Nav.Link>
             <Nav.Link onClick={() => scrollToSection("project")}>
               Progetti
             </Nav.Link>
