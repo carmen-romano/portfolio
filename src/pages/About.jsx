@@ -36,7 +36,7 @@ let About = () => {
               </p>
               <h2 className="fs-5 fw-light">
                 <a
-                  href="public/images/Curriculum Carmen Romano.pdf"
+                  href="/images/Curriculum%20Carmen%20Romano.pdf"
                   download="Curriculum_Vitae_Carmen_Romano.pdf"
                   className="text-decoration-none text-dark"
                 >
