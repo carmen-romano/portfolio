@@ -18,7 +18,7 @@ const project = [
     project: spotify,
     description:
       "Questo progetto realizzato interamente in JS Vanilla, offre funzionalità di ricerca, riproduzione e gestione di brani musicali e esplorazione di album e artisti, con un'interfaccia intuitiva e reattiva.",
-    languageIUse: "Html Css Javascript Bootstrap",
+
     link: "https://github.com/carmen-romano/spotifyClone",
     demo: "https://carmen-romano.github.io/spotifyClone/",
   },
@@ -27,7 +27,6 @@ const project = [
     project: linkedin,
     description:
       "Questo progetto consente agli utenti di creare profili, condividere post e interagire con il contenuto. Utilizza React per l'interfaccia utente, Redux per lo stato e un'API personalizzata per la gestione dei dati.",
-    languageIUse: "React Redux Bootstrap Vue.js",
     link: "https://github.com/ABBA3124/u3-w4-d1-al-5-build-week-3-linkedin",
   },
   {
@@ -35,7 +34,6 @@ const project = [
     project: appMeteo,
     description:
       "Questo progetto utilizza l'API di OpenWeather per visualizzare le previsioni meteorologiche. Implementato con React, offre agli utenti informazioni meteorologiche attuali e future in modo intuitivo.",
-    languageIUse: "React Bootstrap",
     link: "https://github.com/carmen-romano/u3-w2-d5-weather",
   },
   {
@@ -43,7 +41,6 @@ const project = [
     project: appQuiz,
     description:
       "Questo progetto, creato con JS Vanilla, presenta un timer per ogni domanda e visualizza la percentuale di risposte corrette. Utilizzando localStorage, può memorizzare temporaneamente il progresso degli utenti.",
-    languageIUse: "Html, Css, Javascript",
     link: "https://github.com/AlessioVulpinari/Group_6_Epicode",
   },
   {
@@ -118,7 +115,6 @@ const ProjectCarousel = () => {
                 <h3 className="text-start">{project.name}</h3>
                 <Image src={project.project} alt={project.name} />
                 <p className="mt-3">{project.description}</p>
-                <p>{project.languageIUse}</p>
               </div>
             </div>
           ))}

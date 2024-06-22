@@ -13,6 +13,8 @@
   margin-top: 10vh;
   overflow: hidden;
   letter-spacing: 0.15em;
+  overflow: hidden;
+  height: 200px;
 }
 
 #home .icons {
@@ -57,4 +59,12 @@
   #home .title {
     font-size: 1.5rem;
   }
+}
+.title2 {
+  font-size: 4rem;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
