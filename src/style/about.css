@@ -1,6 +1,11 @@
 #about p {
   word-spacing: 5px;
   font-weight: 300;
+  font-size: 2.3vh !important;
+}
+#about .profile-photo {
+  margin-left: auto;
+  margin-right: auto;
 }
 body.dark-mode #about hr {
   color: #b7c3f3 !important;

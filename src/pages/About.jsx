@@ -1,19 +1,33 @@
 import "../style/about.css";
 import { Col, Container, Nav, Row } from "react-bootstrap";
 import { FaArrowRight } from "react-icons/fa6";
-
+import photo from "../../public/images/project/carmenromanoprofile.jpeg";
 let About = () => {
   return (
     <div id="about">
       <Container>
-        <Row>
+        <Row id="row1">
           <hr />
-          <div className="my-5">
-            <h2 className="text-center fs-2">Chi sono</h2>
-          </div>
-          <Col>
+          <Col xs={12} md={12}>
+            <div className="photo mx-auto">
+              <img
+                src={photo}
+                className="profile-photo"
+                alt="carmenromanoprofile"
+                style={{
+                  width: "17%",
+                  display: "flex",
+                  alignItems: "center",
+                  borderRadius: "150px",
+                }}
+              ></img>
+            </div>
+          </Col>
+          <Col xs={12} md={12}>
+            <h2 className="text-center fs-2 my-5">Chi sono</h2>
+
             <div>
-              <p className="fs-4 text-center">
+              <p className="fs-4 text-center" id="paragrafo1">
                 Dopo aver coltivato la mia passione per la programmazione
                 attraverso lo studio autonomo, ho deciso di intraprendere un
                 corso intensivo di formazione presso Epicode per ampliare e
