@@ -20,7 +20,7 @@ const project = [
       "Questo progetto realizzato interamente in JS Vanilla, offre funzionalità di ricerca, riproduzione e gestione di brani musicali e esplorazione di album e artisti, con un'interfaccia intuitiva e reattiva.",
 
     link: "https://github.com/carmen-romano/spotifyClone",
-    demo: "https://carmen-romano.github.io/spotifyClone/",
+    demo: "https://spotifyclone-carmenromano.netlify.app/",
   },
   {
     name: "LinkedIn Clone",
@@ -35,6 +35,7 @@ const project = [
     description:
       "Questo progetto utilizza l'API di OpenWeather per visualizzare le previsioni meteorologiche. Implementato con React, offre agli utenti informazioni meteorologiche attuali e future in modo intuitivo.",
     link: "https://github.com/carmen-romano/u3-w2-d5-weather",
+    demo: "https://weather-app-carmen-romano.netlify.app",
   },
   {
     name: "App Quiz",
@@ -48,7 +49,6 @@ const project = [
     project: pokedex,
     description:
       "Un Pokédex dinamico creato con JavaScript, che offre agli utenti la possibilità di esplorare e filtrare una vasta gamma di Pokémon, permettendo loro di trovare facilmente i loro preferiti e scoprire le informazioni essenziali su ciascuno di essi",
-    languageIUse: "Html, Css, Javascript",
     link: "https://github.com/AlessioVulpinari/Group_6_Epicode",
   },
 ];
@@ -111,6 +111,16 @@ const ProjectCarousel = () => {
                   className="text-center"
                 >
                   <FiGithub className="github-icon" />
+                </Nav.Link>
+                <Nav.Link
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-center"
+                >
+                  <p className="fs-6 fw-bolder">
+                    {project.demo ? "Demo" : " "}
+                  </p>
                 </Nav.Link>
                 <h3 className="text-start">{project.name}</h3>
                 <Image src={project.project} alt={project.name} />
