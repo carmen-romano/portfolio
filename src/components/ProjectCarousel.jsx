@@ -7,6 +7,7 @@ import appMeteo from "../../public/images/project/appmeather.webp";
 import spotify from "../../public/images/project/spotifyClone.webp";
 import linkedin from "../../public/images/project/linkedinclone.webp";
 import pokedex from "../../public/images/project/pokedex_.webp";
+import netflix from "../../public/images/project/netflix-clone.webp";
 import { Container, Image, Nav } from "react-bootstrap";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { FiGithub } from "react-icons/fi";
@@ -49,6 +50,13 @@ const project = [
     description:
       "Un Pokédex dinamico creato con JavaScript, che offre agli utenti la possibilità di esplorare e filtrare una vasta gamma di Pokémon, permettendo loro di trovare facilmente i loro preferiti e scoprire le informazioni essenziali su ciascuno di essi",
     link: "https://github.com/AlessioVulpinari/Group_6_Epicode",
+  },
+  {
+    name: "Netflix Clone",
+    project: netflix,
+    description:
+      "Netflix Clone è un progetto che replica l'aspetto e le funzionalità di Netflix utilizzando React. Include un layout responsive, caroselli di immagini e una simulazione di visualizzazione dei contenuti.",
+    link: "https://github.com/carmen-romano/U3-W1-D5-Netflix-Clone",
   },
 ];
 
