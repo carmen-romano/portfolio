@@ -20,7 +20,6 @@ const project = [
       "Questo progetto realizzato interamente in JS Vanilla, offre funzionalità di ricerca, riproduzione e gestione di brani musicali e esplorazione di album e artisti, con un'interfaccia intuitiva e reattiva.",
 
     link: "https://github.com/carmen-romano/spotifyClone",
-    demo: "https://spotifyclone-carmenromano.netlify.app/",
   },
   {
     name: "LinkedIn Clone",
